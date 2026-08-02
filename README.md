@@ -1,4 +1,3 @@
-# EAO_of_EORC
 # Prediction Tool for Early Adverse Outcomes After Surgery in Early-Onset Rectal Cancer
 
 This repository contains the R source code used in the study:
@@ -33,20 +32,11 @@ The web application is available at:
 
 The clinical dataset used in this study contains sensitive patient information and is **not publicly available**.
 
-De-identified data may be made available from the corresponding author upon reasonable request and institutional approval (Approval No. QYFYWZLL50218, Affiliated Hospital of Qingdao University).
+De-identified data may be made available from the corresponding author upon reasonable request and institutional approval.
 
 **Contact:**
 
-- Prof. Yu-Qi Sun  
-  Department of General Surgery, Affiliated Hospital of Qingdao University  
-  Email: 2018020748@qdu.edu.cn
-
-- Prof. Xing-Qi Zhang  
-  Department of Vascular Surgery, Affiliated Hospital of Qingdao University  
-  Email: 953010485@qq.com
-
 - Prof. Yan-Bing Zhou  
-  Department of General Surgery, Affiliated Hospital of Qingdao University  
   Email: qdfyzhouyanbing@163.com
 
 > ⚠️ **Note for Reviewers:** To facilitate reproducibility assessment during the peer-review process, the code repository access can be provided to reviewers upon request prior to publication. Please contact the corresponding authors for access credentials.
@@ -154,34 +144,6 @@ The calculator requires the following 11 predictor variables, all of which are r
 - **Additional packages:** `xgboost`, `lightgbm`, `randomForest`, `glmnet`, `kernlab`, `nnet`, `caret`, `rms`, `rmda`, `gridExtra`, `corrplot`
 
 Full session information is provided in `sessionInfo.txt`.
-
----
-
-## 🧪 Model Summary
-
-| Metric | Training Set (n = 453) | Internal Validation (n = 195) | External Validation (n = 102) |
-|--------|------------------------|-------------------------------|-------------------------------|
-| **AUC** | 0.91 (95% CI: 0.88–0.93) | 0.89 (95% CI: 0.85–0.94) | 0.83 (95% CI: 0.76–0.91) |
-| **Brier Score** | — | 0.1104 | — |
-| **Sensitivity** | — | — | — |
-| **Specificity** | — | — | — |
-
-*Refer to the manuscript for complete performance metrics across all 12 models, calibration plots, and decision curve analysis.*
-
-### Model Architecture
-
-- **Algorithm:** Two-layer stacking ensemble
-  - **Base learners:** XGBoost, K-Nearest Neighbors, Random Forest
-  - **Meta-learner:** Logistic regression
-- **Feature selection:** Boruta algorithm (11 confirmed predictors out of 43 candidates)
-- **Hyperparameter optimization:** Bayesian optimization with 5-fold cross-validation
-- **Missing data:** Multiple imputation with chained equations (MICE), 5 imputed datasets, predictive mean matching
-
----
-
-## 📜 License
-
-This code is released under the MIT License.
 
 ---
 
