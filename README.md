@@ -4,7 +4,7 @@ This repository contains the R source code used in the study:
 
 **A Machine Learning Model for Predicting Early Adverse Outcomes After Surgery in Patients with Early-Onset Rectal Cancer: A Two-Center Retrospective Cohort Study**
 
-*Manuscript under review*
+Submitted to *World Journal of Surgical Oncology* (Manuscript ID: 53552edc-8849-45f8-83e7-5a09f59f9115)
 
 ---
 
@@ -61,20 +61,6 @@ De-identified data may be made available from the corresponding author upon reas
 
 │ └── app.R # Shiny web application source code
 
-├── data/ # Description of data structure (no patient data included)
-
-│ └── variable_dictionary.csv # List of all variables with definitions
-
-├── docs/ # Supplementary figures and workflow diagrams
-
-│ └── workflow_diagram.png # Schematic diagram of study workflow (Fig. 1)
-
-├── output/ # Trained model objects (optional)
-
-├── sessionInfo.txt # Full R session information
-
-├── LICENSE
-
 └── README.md
 
 ---
@@ -118,7 +104,6 @@ The calculator requires the following 11 predictor variables, all of which are r
   - Clavien-Dindo grade ≥III postoperative complications
   - Locoregional recurrence or distant metastasis
   - All-cause death
-- **Risk thresholds:** The decision curve analysis (DCA) demonstrated net benefit across a broad spectrum of clinically relevant threshold probabilities (see manuscript Fig. S6). Clinicians should select an appropriate decision threshold based on the specific clinical context (e.g., intensified surveillance vs. adjuvant therapy consideration).
 - **Interpretation guidance:** A higher predicted probability indicates a greater risk of EAO and may warrant:
   - Intensified postoperative surveillance (e.g., shorter follow-up intervals)
   - Multidisciplinary discussion regarding adjuvant therapy considerations
@@ -151,8 +136,7 @@ Full session information is provided in `sessionInfo.txt`.
 
 If you use this code, please cite:
 
-Yue XT, Zhang GJ, Cao H, Zhao XY, Sun YQ, Zhang XQ, Zhou YB. A Machine Learning Model for Predicting Early Adverse Outcomes After Surgery in Patients with Early-Onset Rectal Cancer: A Two-Center Retrospective Cohort Study. *Under review.*
-
+Yue XT, Zhang GJ, Cao H, Zhao XY, Sun YQ, Zhang XQ, Zhou YB. A Machine Learning Model for Predicting Early Adverse Outcomes After Surgery in Patients with Early-Onset Rectal Cancer: A Two-Center Retrospective Cohort Study. World Journal of Surgical Oncology (under review).
 ---
 
 ## 🏷 Abbreviations
