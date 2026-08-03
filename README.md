@@ -24,7 +24,7 @@ This repository provides the complete R scripts used for:
 - Development of the Shiny web-based prediction calculator
 
 The web application is available at:  
-🔗 **[https://qddx-gi.shinyapps.io/EORC_EAO/](https://qddx-gi.shinyapps.io/EORC_EAO/)**
+🔗 **[https://qddx-gi.shinyapps.io/EORC_EAO/](https://qddx-gi.shinyapps.io/EAO_of_EORC/)**
 
 ---
 
